@@ -1,0 +1,20 @@
+
+May 12, 2020 22:17:02.68 NEW SESSION
+May 12, 2020 22:17:02.68 [1844:1424:0512/221702.683:ERROR:browser_switcher_service.cc(238)] XXX Init()
+May 12, 2020 22:17:04.11 [1844:14692:0512/221704.114:ERROR:connection_factory_impl.cc(420)] Failed to connect to MCS endpoint with error -105
+May 12, 2020 22:17:30.37 [1844:14692:0512/221730.371:ERROR:connection_factory_impl.cc(420)] Failed to connect to MCS endpoint with error -105
+May 12, 2020 22:18:16.99 [1844:14692:0512/221816.990:ERROR:connection_factory_impl.cc(420)] Failed to connect to MCS endpoint with error -105
+May 12, 2020 22:19:56.45 [1844:14692:0512/221956.455:ERROR:connection_factory_impl.cc(420)] Failed to connect to MCS endpoint with error -105
+May 12, 2020 22:22:55.03 [1844:14692:0512/222255.029:ERROR:connection_factory_impl.cc(420)] Failed to connect to MCS endpoint with error -105
+May 12, 2020 22:30:11.60 [1844:14692:0512/223011.607:ERROR:connection_factory_impl.cc(420)] Failed to connect to MCS endpoint with error -105
+May 12, 2020 22:40:11.62 [1844:14692:0512/224011.623:ERROR:connection_factory_impl.cc(420)] Failed to connect to MCS endpoint with error -105
+May 12, 2020 22:50:11.63 [1844:14692:0512/225011.636:ERROR:connection_factory_impl.cc(420)] Failed to connect to MCS endpoint with error -105
+May 12, 2020 23:00:11.65 [1844:14692:0512/230011.649:ERROR:connection_factory_impl.cc(420)] Failed to connect to MCS endpoint with error -105
+May 12, 2020 23:10:11.66 [1844:14692:0512/231011.665:ERROR:connection_factory_impl.cc(420)] Failed to connect to MCS endpoint with error -105
+May 12, 2020 23:20:11.68 [1844:14692:0512/232011.679:ERROR:connection_factory_impl.cc(420)] Failed to connect to MCS endpoint with error -105
+May 12, 2020 23:30:11.69 [1844:14692:0512/233011.694:ERROR:connection_factory_impl.cc(420)] Failed to connect to MCS endpoint with error -105
+May 12, 2020 23:40:11.70 [1844:14692:0512/234011.708:ERROR:connection_factory_impl.cc(420)] Failed to connect to MCS endpoint with error -105
+May 12, 2020 23:50:11.72 [1844:14692:0512/235011.722:ERROR:connection_factory_impl.cc(420)] Failed to connect to MCS endpoint with error -105
+May 13, 2020 24:00:11.74 [1844:14692:0513/000011.740:ERROR:connection_factory_impl.cc(420)] Failed to connect to MCS endpoint with error -105
+May 13, 2020 24:10:11.75 [1844:14692:0513/001011.754:ERROR:connection_factory_impl.cc(420)] Failed to connect to MCS endpoint with error -105
+May 13, 2020 24:15:45.05 [1844:14692:0513/001545.058:ERROR:connection_factory_impl.cc(420)] Failed to connect to MCS endpoint with error -106

@@ -1,0 +1,6 @@
+127.0.0.1 - - [25/Apr/2020:19:28:50 +0530] "GET / HTTP/1.1" 404 709
+127.0.0.1 - - [25/Apr/2020:19:40:14 +0530] "GET / HTTP/1.1" 404 709
+0:0:0:0:0:0:0:1 - - [25/Apr/2020:19:40:15 +0530] "GET /CustomerRegistration/login.jsp HTTP/1.1" 200 344
+0:0:0:0:0:0:0:1 - - [25/Apr/2020:19:40:27 +0530] "POST /CustomerRegistration/login HTTP/1.1" 200 898
+0:0:0:0:0:0:0:1 - - [25/Apr/2020:19:40:29 +0530] "GET /CustomerRegistration/updatecustomer.jsp?id=1&name=Gamitha&email=gami%40gmail.com&uname=&phone=0767490237&address=187%2f2%2cDahanayaka+Mw%2cGalle&pass=gam123 HTTP/1.1" 200 742
+0:0:0:0:0:0:0:1 - - [25/Apr/2020:19:40:39 +0530] "POST /CustomerRegistration/update HTTP/1.1" 200 155

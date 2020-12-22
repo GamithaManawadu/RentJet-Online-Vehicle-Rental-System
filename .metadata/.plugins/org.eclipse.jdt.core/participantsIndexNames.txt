@@ -1,0 +1,9 @@
+INDEX VERSION 1.131
+C:\Users\Gamitha\Desktop\New folder1\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3430592469.index
+\CustomerRegistration\src
+C:\Users\Gamitha\Desktop\New folder1\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1500236079.index
+\CustomerRegistration\src
+E:\New folder1\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3430592469.index
+\CustomerRegistration\src
+E:\studies\New folder1\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3430592469.index
+\CustomerRegistration\src

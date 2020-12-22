@@ -1,0 +1,9 @@
+package customer;
+
+public interface CustomerDAO {
+	boolean validate(String UserName,String Password);
+	
+	
+	
+
+}

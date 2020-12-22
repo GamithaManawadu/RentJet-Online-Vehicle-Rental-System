@@ -1,0 +1,183 @@
+package customer;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.Statement;
+import java.util.ArrayList;
+import java.util.List;
+
+public class CustomerDBUtil {
+	
+	private static boolean isSuccess;
+	private static Connection con = null;
+	private static Statement stat = null;
+	private static ResultSet rs = null;
+	
+	
+	
+	public static boolean validate(String UserName,String Password){
+		
+		
+						
+		
+		
+		try {
+						
+			con = DBconnect.getConnection();
+			stat = con.createStatement();
+			
+			String sql = "select * from customer where User_name='"+UserName+"'and Password='"+Password+"'";
+			
+			rs = stat.executeQuery(sql);
+			
+			if(rs.next()) {
+				isSuccess=true;
+			}else {
+				isSuccess=false;
+			}
+		}catch(Exception e) {
+			e.printStackTrace();
+		}
+		return isSuccess;
+	}
+			
+	public static List<Customer> getcustomerDetails1(String UserName) {
+		ArrayList<Customer> cus = new ArrayList<>();
+		
+		 
+		 
+		try {
+			
+			con = DBconnect.getConnection();
+			stat = con.createStatement();
+			
+			
+			String sql = "select * from customer where User_name= '"+UserName+"'";
+			
+			rs = stat.executeQuery(sql);
+			
+			while(rs.next()) {
+				int Cus_id = rs.getInt(1);
+				String Cus_name = rs.getString(2);
+				String Email = rs.getString(3);
+				String User_name = rs.getString(4);
+				String phone = rs.getString(5);
+				String address = rs.getString(6);
+				String password = rs.getString(7);
+				
+				Customer c = new Customer(Cus_id,Cus_name,Email,User_name,phone,address,password);
+				cus.add(c);
+						 	    	 
+	    	 
+	    	 }
+		}
+		 catch(Exception e) {
+			 e.printStackTrace();
+		 }
+		 return cus;
+	}
+	 
+
+
+	 
+	
+		//insert customer details to the database
+		
+		public static boolean insertcustomer(String name,String email,String username,String phone, String address,String password ) {
+			boolean isSuccess = false;
+			
+			
+			
+			
+			try {
+				con = DBconnect.getConnection();
+				stat = con.createStatement();
+				
+				
+				
+				String sql = "insert into customer values (0,'"+name+"','"+email+"','"+username+"','"+phone+"','"+address+"','"+password+"')";
+				int rs = stat.executeUpdate(sql);
+				
+				if (rs > 0) {
+					isSuccess = true;
+				}
+				else {
+					isSuccess = false;
+				}
+				
+				
+			}
+			catch(Exception e) {
+				e.printStackTrace();
+			}
+			
+			return isSuccess;
+		
+		
+
+
+		
+		}
+		//updating the database
+		
+		 public static boolean updatecustomer(String id, String name, String email, String phone, String username,String address, String password) {
+			
+			try {
+				con = DBconnect.getConnection();
+	    		stat = con.createStatement();
+	    		
+				String sql = "update customer set Cus_name='"+name+"',Email='"+email+"',User_name='"+username+"',Phone_num='"+phone+"',Address='"+address+"',Password='"+password+"'"
+	    				+ "where Cus_id='"+id+"'";
+				int rs = stat.executeUpdate(sql);
+				
+				if (rs > 0) {
+					isSuccess = true;
+				}
+				else {
+					isSuccess = false;
+				
+				}
+			}
+			
+			catch(Exception e) {
+				e.printStackTrace();
+			}
+			return isSuccess;
+		
+			}
+		 
+		 //delete customer
+		 
+		 public static boolean deletecustomer(String id) {
+			 
+			 int conId = Integer.parseInt(id);
+			 
+			 try {
+				 con = DBconnect.getConnection();
+		    	 stat = con.createStatement();
+		    		
+		    	 String sql = "delete from customer where Cus_id='"+conId+"'";	
+		    	 int rs = stat.executeUpdate(sql);
+		    	 
+		    	 if(rs > 0) {
+		    		 isSuccess = true;
+		    	 }
+		    	 else {
+		    		 isSuccess= false;
+		    	 }
+			 }
+			 catch(Exception e) {
+				 e.printStackTrace();
+			 }
+			 return isSuccess;
+		 }
+
+
+		
+	
+	
+		 }
+
+
+		
